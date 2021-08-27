@@ -11,8 +11,7 @@ const bubleSort = (arr) => {
 	if (Array.isArray(temp)) {
 		for (let i = 0; i < temp.length; i++) {
 			for (let j = 0; j < temp.length; j++) {
-				if (temp[j] > temp[j + 1]) {
-					//compare two adjacent items | if the left item is grater then swap them
+				if (temp[j] > temp[j + 1]) {//compare two adjacent items | if the left item is grater then swap them
 					[temp[j], temp[j + 1]] = [temp[j + 1], temp[j]] //this is how you swap in js! It's a lot like python
 				}
 			}
